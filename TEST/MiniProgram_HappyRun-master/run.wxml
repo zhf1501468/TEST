@@ -1,0 +1,15 @@
+<!--run.wxml-->
+<view class="head">
+    <button class='btn' type='primary' bindtap="starRun">开始跑步</button>
+    <button class='btn' type='primary' bindtap="stopRun">暂停跑步</button>
+    <button class='btn' type='primary' bindtap="clearRun">清除数据</button>
+</view>
+<view class='counter'>
+    <text space='nbsp'>里程数：{{meters}}km      时间：{{time}}</text>
+</view>
+<map
+  class="mapView"
+  latitude="{{latitude}}"
+  longitude="{{longitude}}"
+  markers="{{markers}}"
+  />
